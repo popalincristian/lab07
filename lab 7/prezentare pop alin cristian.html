@@ -1,0 +1,74 @@
+<html>
+<title>pagina de descriere</title>
+<head>
+<script>
+	function veziviitoru()
+	{
+	document.getElementById('numeprofil').innerHTML = 'ing. Pop Alin Cristian';
+	document.getElementById('poza').src = "poza2.jpg";
+	document.getElementById('poza').style.border = "9px";
+	document.getElementById('poza').style.opacity = "o.8";
+	
+	var tabel = document.getElementById('tabel');
+	tabel.rows[0].cells[0].innerHTML = "Universitatea tehnica";
+	tabel.rows[1].cells[0].innerHTML = "Programare";
+	tabel.rows[2].cells[0].innerHTML = "Electrotrhnica";
+	
+	document.body.style.backgroundColor = "yellow";
+	}
+	function aratavarsta()
+	{
+	var azi = new Date;
+	var vastramea;
+	var annascut = document.getElementById('varsta').innerHTML;
+	var ancurent = azi.getFullYear();
+	
+	varstamea = ancurent - parseInt(annascut);
+	
+	document.getElementById('varsta').innerHTML = varstamea;
+	}
+</script>
+<style>
+	body {background-color: lightgrey;}
+	img {border-radius: 8px;
+		width: 20%;
+		opacity: 0.9;}
+	h1 {color: green;
+		text-align: left;}
+	p{color: navy;}
+	h3{color: navy;}
+	table, th, td {
+	border: 3px solid black;
+	border-collapse: collapse;}
+	li {list-style-type: square;}
+</style>
+</head>
+
+<body>
+	
+	<h1 id="numeprofil">Pop Alin Cristian</h1>
+	<img id="poza" src="poza pop alin.jpeg">
+	<p>Email: popalin865@yahoo.com</p>
+	<p onmouseover = "aratavarsta()" id="varsta">2001</p>
+	<p>Nu am lasat niciodata scoala sa-mi afecteze educatia. Mark Twain</p>
+	<button type="button" onclick="veziviitoru()">alta viata</button>
+	<h3>Materii preferate</h3>
+	<table id="tabel">
+		<tr>
+		<td><a href="https://etti.utcluj.ro/files/planuri-invatamant/curent/EA_ro.pdf">Electronica aplicata</a></td>
+		</tr>
+		<tr>
+		<td><a href="https://etti.utcluj.ro/files/planuri-invatamant/curent/TST_ro.pdf">Tehnologii şi Sisteme de Telecomunicaţii</a></td>
+		</tr>
+		<tr>
+		<td><a href="https://etti.utcluj.ro/files/planuri-invatamant/curent/EA_ro.pdf">Programarea calculatoarelor si limbaje de programare</a></td>
+		</tr>
+	</table>
+	<h3>Pasiuni</h3>
+	<ul>
+		<li>Masinile</li>
+		<li>Calculatoarele</li>
+	</ul>
+	
+</body>
+</html>

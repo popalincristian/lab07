@@ -1,0 +1,20 @@
+	body {background-color: lightgrey;}
+	img {border-radius: 8px;
+		width: 20%;
+		opacity: 0.9;}
+	h1 {color: green;
+		text-align: left;}
+	h2 {color: green;
+		text-align: left;}
+	p{color: navy;}
+	h3{color: navy;}
+	table, th, td {
+		border: 3px solid black;
+		border-collapse: collapse;}
+	li {list-style-type: square;}
+	h1.titlu {color: yellow;
+		font-family: verdana;
+		text-align: center;}
+	img.coperta {width: 15%;
+	opacity: 0.9;}
+		
